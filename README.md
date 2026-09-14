@@ -9,6 +9,7 @@ used as a quick template for something new.
 | # | Project | What it does | Board |
 |---|---------|--------------|-------|
 | 01 | [button-led-debounce](01-button-led-debounce) | A button toggles an LED, with software debounce and state logging over Serial | ESP32-S3-DevKitC-1 (N16R8) |
+| 02 | [potentiometer-adc](02-potentiometer-adc) | Reads a potentiometer via ADC and prints the raw value and percentage over Serial | ESP32-S3-DevKitC-1 (N16R8) |
 
 ## Usage
 
