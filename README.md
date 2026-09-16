@@ -13,6 +13,7 @@ used as a quick template for something new.
 | 03 | [serial-rgb-commands](03-serial-rgb-commands) | Controls the built-in RGB LED with text commands from the serial monitor, using classes | ESP32-S3-DevKitC-1 (N16R8) |
 | 04 | [railway-crossing](04-railway-crossing) | Two LEDs blink in sync or alternately, mode switched by an external button and BOOT (`INPUT_PULLUP`) | ESP32-S3-DevKitC-1 (N16R8) |
 | 05 | [oled-i2c](05-oled-i2c) | Shows text from the serial monitor on an SSD1306 OLED (U8g2, Ukrainian text) and scans the I2C bus | ESP32-S3-DevKitC-1 (N16R8) |
+| 06 | [thermistor-oled](06-thermistor-oled) | Measures temperature with an NTC thermistor and shows it on an SSD1306 OLED, using classes | ESP32-S3-DevKitC-1 (N16R8) |
 
 ## Usage
 
