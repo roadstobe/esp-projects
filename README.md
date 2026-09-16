@@ -12,6 +12,7 @@ used as a quick template for something new.
 | 02 | [potentiometer-adc](02-potentiometer-adc) | Reads a potentiometer via ADC and prints the raw value and percentage over Serial | ESP32-S3-DevKitC-1 (N16R8) |
 | 03 | [serial-rgb-commands](03-serial-rgb-commands) | Controls the built-in RGB LED with text commands from the serial monitor, using classes | ESP32-S3-DevKitC-1 (N16R8) |
 | 04 | [railway-crossing](04-railway-crossing) | Two LEDs blink in sync or alternately, mode switched by an external button and BOOT (`INPUT_PULLUP`) | ESP32-S3-DevKitC-1 (N16R8) |
+| 05 | [oled-i2c](05-oled-i2c) | Shows text from the serial monitor on an SSD1306 OLED (U8g2, Ukrainian text) and scans the I2C bus | ESP32-S3-DevKitC-1 (N16R8) |
 
 ## Usage
 
