@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ESP32 Panel</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="header">
+    <span class="logo">ESP32 Panel</span>
+    <span class="badge" id="badge">offline</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Hello! 👋</h1>
+      <p>A dashboard for the ESP32. Board data refreshes every second.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Server</h2>
+        <p class="value" id="server-status">—</p>
+        <p class="hint">Connection status</p>
+      </article>
+
+      <article class="card">
+        <h2>Board</h2>
+        <p class="value" id="board-uptime">—</p>
+        <p class="hint" id="board-details">The board hasn't connected yet</p>
+      </article>
+
+      <article class="card">
+        <h2>LED</h2>
+        <p class="value" id="led-state">—</p>
+        <button class="button" id="led-button" type="button" disabled>Turn on</button>
+        <p class="hint" id="led-hint">LED state on the board</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">08-http-led-dashboard</footer>
+</body>
+</html>

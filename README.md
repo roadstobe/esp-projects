@@ -15,6 +15,7 @@ used as a quick template for something new.
 | 05 | [oled-i2c](05-oled-i2c) | Shows text from the serial monitor on an SSD1306 OLED (U8g2, Ukrainian text) and scans the I2C bus | ESP32-S3-DevKitC-1 (N16R8) |
 | 06 | [thermistor-oled](06-thermistor-oled) | Measures temperature with an NTC thermistor and shows it on an SSD1306 OLED, using classes | ESP32-S3-DevKitC-1 (N16R8) |
 | 07 | [move-detection](07-move-detection) | A PIR sensor turns on an LED on motion, using a hardware interrupt and `millis()` timing | ESP32-S3-DevKitC-1 (N16R8) |
+| 08 | [http-led-dashboard](08-http-led-dashboard) | Sends the board state to a Node.js (Express) server over HTTP polling; a web page shows it and switches the LED | ESP32-S3-DevKitC-1 (N16R8) |
 
 ## Usage
 

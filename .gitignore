@@ -18,3 +18,6 @@ CMakeListsPrivate.txt
 # Other editors
 *.swp
 *~
+
+# Node
+node_modules/
