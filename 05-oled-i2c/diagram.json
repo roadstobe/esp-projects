@@ -8,7 +8,7 @@
       "id": "esp",
       "top": -38.58,
       "left": -81.83,
-      "attrs": {}
+      "attrs": { "serialInterface": "USB_SERIAL_JTAG" }
     },
     {
       "type": "board-ssd1306",
@@ -19,8 +19,6 @@
     }
   ],
   "connections": [
-    [ "esp:TX", "$serialMonitor:RX", "", [] ],
-    [ "esp:RX", "$serialMonitor:TX", "", [] ],
     [ "esp:3V3.1", "oled1:VCC", "red", [ "v-48", "h268.6" ] ],
     [ "esp:GND.2", "oled1:GND", "black", [ "v-19.2", "h172.8" ] ],
     [ "esp:4", "oled1:SCL", "yellow", [ "h-19.25", "v-115.2", "h297.3" ] ],

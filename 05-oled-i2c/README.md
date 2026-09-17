@@ -46,3 +46,6 @@ Type `Привіт` and press Enter.
 2. In VS Code with the Wokwi extension: `F1` → **Wokwi: Start Simulator**
 
 `wokwi.toml` points the simulator at the PlatformIO build output, and `diagram.json` describes the circuit.
+The board has `"serialInterface": "USB_SERIAL_JTAG"` set, and nothing is connected to
+`$serialMonitor`. The firmware sends `Serial` over native USB (`ARDUINO_USB_CDC_ON_BOOT=1`),
+so a TX/RX connection would show nothing in the simulator.

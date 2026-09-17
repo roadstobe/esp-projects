@@ -8,7 +8,7 @@
       "id": "esp",
       "top": 76.62,
       "left": -225.83,
-      "attrs": {}
+      "attrs": { "serialInterface": "USB_SERIAL_JTAG" }
     },
     {
       "type": "wokwi-resistor",
@@ -34,8 +34,6 @@
     }
   ],
   "connections": [
-    [ "esp:TX", "$serialMonitor:RX", "", [] ],
-    [ "esp:RX", "$serialMonitor:TX", "", [] ],
     [ "esp:GND.2", "led1:C", "black", [ "h86.4", "v192" ] ],
     [ "r2:2", "led1:A", "green", [ "v0" ] ],
     [ "r1:1", "esp:GND.2", "black", [ "v-38.4", "h-124.8" ] ],
