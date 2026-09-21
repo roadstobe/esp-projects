@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "author": "Vasyl Melnychuk",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp",
+      "top": -19.38,
+      "left": 138.97,
+      "attrs": { "serialInterface": "USB_SERIAL_JTAG" }
+    },
+    { "type": "wokwi-photoresistor-sensor", "id": "ldr1", "top": -6.4, "left": 404, "attrs": {} },
+    { "type": "wokwi-resistor", "id": "r3", "top": 60, "left": 10, "attrs": { "value": "10000" } },
+    { "type": "chip-bc547", "id": "q1", "top": 120, "left": -90, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": 40,
+      "left": -170,
+      "attrs": { "value": "10000" }
+    },
+    {
+      "type": "wokwi-relay-module",
+      "id": "relay1",
+      "top": 230,
+      "left": -280,
+      "attrs": { "transistor": "pnp" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 380,
+      "left": -150,
+      "attrs": { "value": "220" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 330, "left": -30, "attrs": { "color": "red" } }
+  ],
+  "connections": [
+    [ "esp:3V3.1", "ldr1:VCC", "red", [ "v-86.4", "h431.95" ] ],
+    [ "esp:GND.4", "ldr1:GND", "black", [ "h384", "v-191.6" ] ],
+    [ "ldr1:AO", "esp:1", "green", [ "v56.9", "h-297.6", "v-57.6" ] ],
+    [ "esp:5", "r3:2", "orange", [ "h-75.25" ] ],
+    [ "r3:1", "q1:B", "orange", [ "h-144.4", "v72.53" ] ],
+    [ "q1:E", "esp:GND.1", "black", [ "h77.41", "v73.02" ] ],
+    [ "q1:C", "r4:1", "blue", [] ],
+    [ "r4:2", "esp:5V", "red", [ "v-16.85", "h188", "v172.8" ] ],
+    [ "q1:C", "relay1:IN", "blue", [ "h-202.8", "v139.82" ] ],
+    [ "relay1:VCC", "esp:5V", "magenta", [ "h-27.2", "v-47.4" ] ],
+    [ "relay1:GND", "esp:GND.1", "black", [ "h-17.6", "v153.8", "h422.4", "v-201.6" ] ],
+    [ "relay1:COM", "esp:5V", "white", [ "v-0.8", "h271.6", "v-57.6" ] ],
+    [ "relay1:NO", "r2:1", "green", [] ],
+    [ "r2:2", "led1:A", "green", [] ],
+    [ "led1:C", "esp:GND.1", "black", [ "h130.2", "v-160.8" ] ]
+  ],
+  "dependencies": {}
+}

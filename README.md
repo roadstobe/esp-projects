@@ -16,6 +16,7 @@ used as a quick template for something new.
 | 06 | [thermistor-oled](06-thermistor-oled) | Measures temperature with an NTC thermistor and shows it on an SSD1306 OLED, using classes | ESP32-S3-DevKitC-1 (N16R8) |
 | 07 | [move-detection](07-move-detection) | A PIR sensor turns on an LED on motion, using a hardware interrupt and `millis()` timing | ESP32-S3-DevKitC-1 (N16R8) |
 | 08 | [http-led-dashboard](08-http-led-dashboard) | Sends the board state to a Node.js (Express) server over HTTP polling; a web page shows it and switches the LED | ESP32-S3-DevKitC-1 (N16R8) |
+| 09 | [twilight-switch](09-twilight-switch) | An LDR switches a relay-driven lamp on at dusk and off at dawn, with hysteresis; a BC547 drives the 5 V relay from 3.3 V | ESP32-S3-DevKitC-1 (N16R8) |
 
 ## Usage
 

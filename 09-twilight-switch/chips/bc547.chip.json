@@ -1,0 +1,6 @@
+{
+  "name": "BC547",
+  "author": "Vasyl Melnychuk",
+  "pins": ["C", "B", "E"],
+  "controls": []
+}
